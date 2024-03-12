@@ -69,4 +69,7 @@ Ja teniu implementada tota (quasi) la lògica.
   * Implementa un CRUD de persones. També exposa una funcionalitat GET per saber si un usuari existeix. Aquesta funcionalitat és la que s'usa al microservei de *consensus*.
 
 ### Més coses
-Als fitxers *data.sql* pertinents, teniu 3 usuaris donats d'alta, 3 temes i 3 consensus, dels quals un està caducat.
+* Als fitxers *data.sql* pertinents, teniu 3 usuaris donats d'alta, 3 temes i 3 consensus, dels quals un està caducat.
+* Teniu totes les dependències necessàries per fer l'examen. Si el intellij o el copilot insisteigen en afegir-ne més alguan cosa extranya passa. 
+* També teniu un fitxer docker-compose per aixecar el RabbitMQ, que és el que s'usa per a la comunicació asíncrona. Podeu portar el Rabbit 
+instal·lat des de casa, sigui de forma local o en un docker. Si el porteu de casa, no cal que executeu el docker-compose d'aquest projecte. 
