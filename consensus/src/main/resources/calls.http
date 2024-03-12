@@ -1,0 +1,60 @@
+###
+POST localhost:8080/themes
+Content-Type: application/json
+
+{
+  "title": "theme4",
+  "description": "theme4 description"
+}
+
+###
+GET localhost:8080/themes
+
+###
+GET localhost:8080/themes/e947bfb8-ec0a-4d1b-8f55-e9b18f19324e
+
+###
+POST localhost:8080/consensus
+Content-Type: application/json
+
+{
+  "themeId": "68078eae-8e37-4e60-93a0-256ce00d8030",
+  "dueDate": "2024-12-03T10:15",
+  "participants": [
+    "user1@tecnocampus.cat",
+    "user2@tecnocampus.cat"]
+}
+
+###
+GET localhost:8080/consensus
+
+###
+GET localhost:8080/consensus/7a4f17b2-87f4-4069-a696-f38771e5849d
+
+
+###
+PUT localhost:8080/consensus/10e484c2-3e6c-4a3c-bead-324dd3bbab18/vote
+Content-type: application/json
+
+{
+  "participant": "user1@tecnocampus.cat",
+  "vote": "YES"
+}
+
+###
+PUT localhost:8080/consensus/23b9df17-9881-4b19-afa6-ae9d57889a1a/vote
+Content-type: application/json
+
+{
+"participant": "user2@tecnocampus.cat",
+"vote": "YES"
+}
+
+###
+PUT localhost:8080/consensus/7a4f17b2-87f4-4069-a696-f38771e5849d/vote
+Content-type: application/json
+
+{
+  "participant": "user3@tecnocampus.cat",
+  "vote": "NO"
+}

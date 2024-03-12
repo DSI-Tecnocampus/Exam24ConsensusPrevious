@@ -1,0 +1,16 @@
+###
+GET http://localhost:8081/people
+
+###
+GET http://localhost:8081/people/user1@tecnocampus.cat
+
+###
+POST http://localhost:8081/people
+Content-Type: application/json
+
+{
+  "email": "user5@tecnocampus.cat",
+  "name": "user5",
+  "surname": "surname5",
+  "title": "PhD"
+}

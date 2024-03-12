@@ -1,0 +1,31 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+              sql: trace
+      springframework:
+        orm:
+          jpa: DEBUG
+        transaction: DEBUG
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
