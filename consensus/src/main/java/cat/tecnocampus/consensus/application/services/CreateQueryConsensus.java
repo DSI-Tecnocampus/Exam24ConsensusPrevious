@@ -4,7 +4,6 @@ import cat.tecnocampus.consensus.application.domain.Consensus;
 import cat.tecnocampus.consensus.application.domain.ConsensusResult;
 import cat.tecnocampus.consensus.application.domain.Theme;
 import cat.tecnocampus.consensus.application.portsOut.ConsensusPersistence;
-import cat.tecnocampus.consensus.application.portsOut.ParticipantCommunication;
 import cat.tecnocampus.consensus.application.portsOut.ThemePersistence;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
